@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+}
+
+.contain {
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    grid-template-rows: 500px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.contain .sedans {
+    background-color: hsl(31, 77%, 52%);
+    padding: 50px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.contain .sedans h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    font-size: 40px;
+}
+
+.contain .sedans p {
+    font-family: 'Lexend Deca', sans-serif;
+    padding-bottom: 50px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.contain .sedans button {
+    font-family: 'Lexend Deca', sans-serif;
+    border: none;
+    color: hsl(31, 77%, 52%);
+    background-color: hsl(0, 0%, 95%);
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.contain .suvs {
+    background-color: hsl(184, 100%, 22%);
+    padding: 50px;
+}
+
+.contain .suvs h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    font-size: 40px;
+}
+
+.contain .suvs p {
+    font-family: 'Lexend Deca', sans-serif;
+    padding-bottom: 50px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.contain .suvs button {
+    font-family: 'Lexend Deca', sans-serif;
+    border: none;
+    color: hsl(184, 100%, 22%);
+    background-color: hsl(0, 0%, 95%);
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.contain .luxury {
+    background-color: hsl(179, 100%, 13%);
+    padding: 50px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.contain .luxury h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    font-size: 40px;
+}
+
+.contain .luxury p {
+    font-family: 'Lexend Deca', sans-serif;
+    padding-bottom: 50px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.contain .luxury button {
+    font-family: 'Lexend Deca', sans-serif;
+    border: none;
+    color: hsl(179, 100%, 13%);
+    background-color: hsl(0, 0%, 95%);
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+@media (min-width:0px) and (max-width:1022px) {
+    .contain {
+        grid-template-columns: 320px;
+        grid-template-rows:  500px;
+    }
+
+    .contain .sedans {
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .contain .luxury {
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-top-right-radius: 0px;
+    }
+}
